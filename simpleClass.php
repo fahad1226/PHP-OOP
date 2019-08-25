@@ -2,12 +2,11 @@
 
    class Student {
 
-       
-
-       public $name = "Fahaad";
-       public $age = 21;
+    
+       public $name;
+       public $age;
        public $university = "Premier University";
-       public $cgpa = 3.64;
+       public $cgpa;
 
         
         public function Behaviour(){
@@ -25,7 +24,9 @@
 
    $student1 = new Student();
 
+   $student1->name = "Fahad Bin Munir";
+   $student1->age = 21;
+   $student1->cgpa = 3.64;
    $student1->Behaviour();
-
 
 ?>
