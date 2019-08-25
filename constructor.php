@@ -8,6 +8,7 @@
         public $color;
         public $legs;
         public $eat;
+        public $id;
         
         function __construct($name,$species,$color,$legs,$eat) {
 
@@ -30,6 +31,16 @@
             echo "<br>";
         }
 
+        public function setId($id){
+             $this->id = $id;
+        }
+
+        public function __destruct() {
+            if (! empty($this->id)) {
+                echo "id of this person is ".$this->id;
+            }
+        }
+
     }
 
 
@@ -39,6 +50,8 @@
     $anml1->Behavior();
     $anml2->Behavior();
     $anml3->Behavior();
+    $anml3->setId(12);
+    unset($anml3);
 
 
 ?>
