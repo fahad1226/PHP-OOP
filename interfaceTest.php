@@ -57,3 +57,6 @@
     $tchr1->mySchool();
     $tchr1->myCollege();
     $tchr1->myUniversity();
+
+
+    $tchr = new University; // WE CANNOT DO THIS,INTERFACE CANNOT CREATE OBJECT
