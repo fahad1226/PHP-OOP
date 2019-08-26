@@ -35,7 +35,7 @@
 
    $student1->Behaviour();
 
-   Student::ShowStatic();
+   Student::ShowStatic();   ///how to access  --->> className::staticMethod();
 
 
 ?>
